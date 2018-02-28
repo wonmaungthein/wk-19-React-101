@@ -1,18 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Logo from './Components/Logo';
+import BookingMessage from './Components/BookingMessage';
+import SpecialDeals from './Components/SpecialDeals';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
+        <Logo />
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          <h1>Welcome to CYF Hotel</h1>
         </p>
+        <div>
+          <img src="https://codeyourfuture.io/static/media/cyf_brand.fbcea877.png" alt="CodeYourFuture Logo" />
+        </div>
+        <div>
+          <BookingMessage />
+        </div>
+        <div>
+          <SpecialDeals />
+        </div>
       </div>
     );
   }
